@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'fb';
+  src: url(Karla-Bold.woff) format('woff');
+}
+@font-face{
+  font-family: 'gothic';
+  src: url(gothic.woff) format('woff');
+}
+@font-face{
+  font-family: 'opensans';
+  src: url(opensans.woff) format('woff');
+}
+@font-face{
+  font-family: 'RB';
+  src: url(rb.woff) format('woff');
+}
+@font-face{
+  font-family: 'RR';
+  src: url(rr.woff) format('woff');
+}
+
+body{
+  background-color: #eceff5;
+}
+.fblogo{
+  font-size: 30px;
+  font-family: 'gothic';
+  font-weight: bold;
+}
+.navigasifb{
+  background-color: #3b5998;
+}
+.ind{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+p{
+  color: #868f96;
+}
+input[type="text"] {
+  width: 320px;
+  height: 50px;
+  border-radius: 4px 4px 0 0;
+  font-family: 'rr';
+  padding: 12px 15px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+}
+input[type="password"] {
+  width: 320px;
+  height: 50px;
+  border-radius: 0px 0px 4px 4px;
+  font-family: 'rr';
+  padding: 12px 15px;
+  outline: transparent;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+}
+input[type="submit"] {
+  width: 320px;
+  height: 50px;
+  border-radius: 4px;
+  color: white;
+  background-color: #3578e5;
+  font-family: 'rb';
+  border-width: 1px;
+  border-style: solid;
+  border-color: #538be7;
+}
+.ba{
+ color: #3b5998;
+}
+.bb{
+  color: grey;
+}
+.titik{
+  font-size: 7px;
+}
+.tekslogo {
+  font-family: 'gothic';
+  font-style: bold;
+}
+.ba,.bb,.titik{
+  font-family: 'rr';
+}
